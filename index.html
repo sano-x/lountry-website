@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Присоединяйся к Lountry — уютному Discord-сообществу для игр, общения и творчества!">
+    <meta name="keywords" content="Lountry, Discord, сервер, сообщество, игры, общение">
+    <meta name="author" content="Sano.a, azakein">
+    <title>Lountry - Твой Discord-сервер</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="images/lountry.png.gif" alt="Lountry Logo">
+        </div>
+        <a href="https://discord.gg/lountry" class="join-btn">Присоединиться</a>
+    </header>
+
+    <section class="hero">
+        <img src="images/lountry.png.gif" alt="Lountry">
+        <h1>Добро пожаловать в Lountry!</h1>
+        <p>Присоединяйся к нашему уютному сообществу, где мы играем, общаемся и творим вместе.</p>
+        <a href="https://discord.gg/lountry" class="btn">Войти в Discord</a>
+        <a href="#owners" class="btn secondary">Узнать о владельцах</a>
+    </section>
+
+    <section id="owners" class="owners">
+        <h2>Владельцы сервера</h2>
+        <div class="owner-cards">
+            <div class="owner-card">
+                <img src="images/sano.jpg" alt="Sano.a">
+                <h3>Sano.a</h3>
+                <p>Основатель Lountry, любит игры и общение. Всегда готов помочь новичкам!</p>
+            </div>
+            <div class="owner-card">
+                <img src="images/baka.gif" alt="azakein">
+                <h3>azakein</h3>
+                <p>Сооснователь, отвечает за ивенты и модерацию. Фанат творчества и мемов.</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2025 Lountry. Все права защищены. <a href="https://discord.gg/lountry" style="color: #7289da;">Присоединяйся к нам!</a></p>
+    </footer>
+
+    <script>
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href').substring(1);
+                const targetElement = document.getElementById(targetId);
+                targetElement.scrollIntoView({ behavior: 'smooth' });
+            });
+        });
+    </script>
+</body>
+</html>

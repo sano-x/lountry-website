@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+body {
+    background: #1a1a1a;
+    color: #fff;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    background: #000;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+}
+
+.logo img {
+    width: 50px;
+}
+
+.join-btn {
+    padding: 10px 20px;
+    background: #7289da;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.join-btn:hover {
+    background: #5a6eb3;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero img {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 30px;
+    color: #ccc;
+}
+
+.hero .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    margin: 10px;
+    background: #7289da;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.hero .btn.secondary {
+    background: #333;
+}
+
+.hero .btn:hover {
+    background: #5a6eb3;
+}
+
+.hero .btn.secondary:hover {
+    background: #555;
+}
+
+.owners {
+    padding: 50px;
+    text-align: center;
+    background: #222;
+}
+
+.owners h2 {
+    font-size: 32px;
+    margin-bottom: 40px;
+}
+
+.owner-cards {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.owner-card {
+    background: #333;
+    padding: 20px;
+    border-radius: 10px;
+    width: 200px;
+    transition: transform 0.3s;
+}
+
+.owner-card:hover {
+    transform: scale(1.05);
+}
+
+.owner-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 15px;
+}
+
+.owner-card h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.owner-card p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: #666;
+}
